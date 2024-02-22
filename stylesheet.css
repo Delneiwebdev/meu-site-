@@ -56,13 +56,9 @@
        
 /* styles.css */
 
-.carousel {
-    justify-content: center
-    display: flex
-    width: 60%
-    
+#carousel-item img{
+    display: block;
+    max-width: 80px;
+    min width: 50px;
+    }
 
-}
-
-       
-       
