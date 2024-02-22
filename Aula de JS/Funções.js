@@ -37,4 +37,20 @@ let y = (a, b) => a + b;
 let resultadoArrow = y(3, 5);
 console.log(resultadoArrow); // Saída: 8
 
+//exemplos 
+//regular
+function multiplicar (x,y){
+    return x*y
+}
+var multi = multiplicar(5,6)
+console.log(multi)
+
+//anonima 
+function somavalores(a, b, c) {
+    var total = a + b + c;
+    return total;  
+  }
+  
+  var p = somavalores(2, 4, 7);
+  console.log(p);  // Saída: 13
   
