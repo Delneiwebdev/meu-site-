@@ -4,6 +4,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        
         }
     
         header {
@@ -57,7 +58,9 @@
 /* styles.css */
 
 .carousel-item img {
-    max-height: 800px; /* Definindo a altura máxima */
+    max-height: 500px; /* Definindo a altura máxima */
     width: auto; /* Permitindo a largura automática para manter a proporção */
     position:relative;
     width: 50%;            
+
+ 
