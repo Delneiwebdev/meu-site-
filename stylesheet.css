@@ -56,9 +56,8 @@
        
 /* styles.css */
 
-#carousel-item img{
-    display: block;
-    max-width: 80px;
-    min width: 50px;
-    }
-
+.carousel-item img {
+    max-height: 800px; /* Definindo a altura máxima */
+    width: auto; /* Permitindo a largura automática para manter a proporção */
+    position:relative;
+    width: 50%;            
