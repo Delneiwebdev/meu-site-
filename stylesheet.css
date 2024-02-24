@@ -1,66 +1,32 @@
 
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        
-        }
-    
-        header {
-            background-color: #28a745;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-    
-        nav {
-            background-color: #28a745;
-        }
-    
-        nav a {
-            color: #fff;
-        }
-    
-        nav a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-    
-        main {
-            padding: 20px;
-        }
-    
-        section {
-            padding: 20px;
-        }
-    
-        footer {
-            background-color: #28a745;
-            color: #fff;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    
-        table {
-            width: 100%;
-            margin-top: 20px;
-        }
-    
-        legend {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-       
-/* styles.css */
-
 .carousel-item img {
-    max-height: 500px; /* Definindo a altura máxima */
-    width: auto; /* Permitindo a largura automática para manter a proporção */
-    position:relative;
-    width: 50%;            
+    max-width:100%;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+    
+    
+    
+}  
 
- 
+.carousel-caption h5 {
+    font-size: 80px; /* Corrigido: removido as vírgulas extras */
+    color:rgb(255, 255, 255)
+    mix-blend-mode: difference;
+  }
+  
+.carousel-caption p {
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    mix-blend-mode: difference;
+    text-shadow: 150px 150px 150x rgb(0, 0, 0);
+
+}
+
+.carousel-caption {
+    position:absolute;
+    background: rgba(0, 0, 0, 0.5); /* Adicione um fundo semi-transparente para destacar o texto */
+  }
+
+
