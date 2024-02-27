@@ -1,270 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-   <!-- Definição da codificação de caracteres e da viewport -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Título da página e ícone da guia do navegador -->
-    <title>KHALIFA’S RESTAURANTE</title>
-    <link rel="shortcut icon" href="Screenshot_2.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+<hr class="featurette-divider">
 
+      <style>.featurette img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner pai */
+        height: auto; /* Mantém a proporção da imagem ao redimensionar */
+        border-radius: 8px; /* Adiciona borda arredondada à imagem */
+    }
     
-    <!-- Cabeçalho da página -->
-    <header class="container-fluid p-2 bg-text bg-success text-center">
- <!-- Navegação com links para as seções da página -->
-<nav class="navbar navbar-expand-lg bg-success">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="Screenshot_2.ico" alt="KHALIFA’S Logo" style="max-height: 40px;"> KHALIFA’S
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end position-static" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://wa.me/5531920092072">Reserva</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Taxas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end "> <!-- Adicione a classe dropdown-menu-end aqui -->
-                        <li><a class="dropdown-item " href="https://wa.me/5531920092072">Nosso WhatsApp</a></li>
-                        <li><a class="dropdown-item " href="https://www.reclameaqui.com.br/minha-conta/">Reclamações</a></li>
-                        <li><a class="dropdown-item " href="https://www.google.com/localservices/prolist?g2lbs=AIQllVyfvkCDg96v8dzjI_DgBOxQonE5N0IT8mbwW-x-9AB4fXj-r5To8vytFwokgFNapYqmxjqmYwbUgjsXglfDp_g3hl8KwcMUR8BKAlDZw6oW9UfPe8h1rZLMLu36YBbt4yElxKSwb6-X8jUqGq9BLfCZ4B4L9Q%3D%3D&hl=pt-BR&gl=br&cs=1&ssta=1&q=sal%C3%A3o&oq=sal%C3%A3o&scp=ChFnY2lkOmJlYXV0eV9zYWxvbhI7EhIJkZxOWjEYTQcRt659NuyHqDQiDUFyYcOndWHDrSwgTUcqFA0B7_D1Fc5U6-YdT_P39SXxyvDmMAEaBnNhbMOjbyIGc2Fsw6NvKhBTYWzDo28gZGUgQmVsZXph&slp=MgA6HENoTUl0ckhEcVpUQ2hBTVZEMFZJQUIwTHVRbmlSAggCYAB6zAFDZ1p6WVd6RG8yOUlucGlYd1BtMmdJQUlXaElRQUJnQUlnWnpZV3pEbzI4cUJBZ0RFQUNTQVF4aVpXRjFkSGxmYzJGc2IyNmFBU1JEYUdSRVUxVm9UazFIT1c1VE1GWktVVEJHYmxOVlRqRk9SWGhGVVZkME0xSlNRVUtxQVRvUUFTb0tJZ1p6WVd6RG8yOG9EREllRUFFaUd2RXB1eTJ1UkxmVndHTE9ZR0lrdnNQeWY0ZGVqYmVJZjJIZk1nb1FBaUlHYzJGc3c2TnaSAbgCCg0vZy8xMXF6ZDBjbTB6Cg0vZy8xMWY1Nzlfa241Cg0vZy8xMW12aDN6eTYzCg0vZy8xMWhmanoydjgxCg0vZy8xMWtuczZ4MnNyCg0vZy8xMWoyZzRxdGtzCg0vZy8xMXB2NmQxdjl3Cg0vZy8xMWZ3ZGZxbWh6Cg0vZy8xMWptejVyMTA2Cg0vZy8xMXJtdDJfNWg0Cg0vZy8xMXR3cTM2ZmxwCg0vZy8xMWg0OHl0OXNzCg0vZy8xMWg1N2s3amgzCg0vZy8xMXM0OTJkcDZ6Cg0vZy8xMWw3MHpjdm1sCg0vZy8xMXZwbXhrOXZtCg0vZy8xMWtqNzdfYzA0Cg0vZy8xMWwxeWtieGo3Cg0vZy8xMWg2Zmd6N192Cg0vZy8xMWhiNXc3Mzg5EgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXF6ZDBjbTB6OrQBV2hJUUFCZ0FJZ1p6WVd6RG8yOHFCQWdERUFDU0FReGlaV0YxZEhsZmMyRnNiMjZhQVNSRGFHUkVVMVZvVGsxSE9XNVRNRlpLVVRCR2JsTlZUakZPUlhoRlVWZDBNMUpTUVVLcUFUb1FBU29LSWdaellXekRvMjhvRERJZUVBRWlHdkVwdXkydVJMZlZ3R0xPWUdJa3ZzUHlmNGRlamJlSWYySGZNZ29RQWlJR2MyRnN3Nk52&serdesk=1&lrlstt=1708715246517&ved=2ahUKEwigsLyplMKEAxXyqpUCHZQ5AJ8QvS56BAgXEAE">Sua avaliação</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item " href="#">Faça login</a></li>
-                    </ul>
-                </li>
-            </ul>
+    .featurette p {
+        margin-top: 20px; /* Adiciona espaço entre o texto e a imagem */
+    }</style>
+
+
+<div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
-    </div>
-</nav>
 
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="food.jpg" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block ">
-                <h5>Food</h5>
-                <p>Uma experiência gastronômica inigualável.</p>
-            </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
-        <div class="carousel-item">
-            <img src="food.jpg.png" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block ">
-                <h5>Nossa Equipe</h5>
-                <p>Conheça o time que trabalha por você.</p>
-            </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
-        <div class="carousel-item">
-            <img src="drink.jpg" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block ">
-                <h5>Drinks</h5>
-                <p>A inesquecivel bebida</p>
-            </div>
-        </div>
-    </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Próximo</span>
-</button>
-</div>
-</header>
 
+        <hr class="featurette-divider">
 
-        
-        
-<main> 
-    
+        <!-- /END THE FEATURETTES -->
 
-    
-
-
-<section class="container-fluid bg-light p-2">
-    <h2 class="text-center">Nossa História</h2>
-    <p class="p-4">Localizado em um cenário deslumbrante, onde cada detalhe é cuidadosamente planejado para proporcionar uma jornada sensorial inigualável, o KHALIFA oferece não apenas refeições extraordinárias, mas uma verdadeira celebração da culinária de classe mundial. Permita-se ser transportado para um universo de sabores exóticos, texturas sedutoras e aromas inebriantes, enquanto nossa equipe dedicada trabalha incansavelmente para superar suas expectativas e criar memórias que durarão para sempre. Prepare-se para uma experiência gastronômica que transcende o comum e mergulhe em uma indulgência verdadeiramente excepcional no KHALIFA."</p>
-
-<div class="row container-fluid">
-    <figure class="col-md-6 text-center">
-        <img src="pexels-cottonbro-studio-3338675.jpg" alt="KHALIFA’S Food" class="img-fluid img-200-200">
-        <figcaption>KHALIFA’S Food</figcaption>
-    </figure>
-    <figure class="col-md-6 text-center">
-        <img src="pexels-tim-durand-15290551.jpg" alt="KHALIFA’S Drinks" class="img-fluid img-200-200">
-        <figcaption>KHALIFA’S Drinks</figcaption>
-    </figure>
-</div>
-    
-    
-    <section>
-        <h2 class="text-center">Descubra mais sobre nós.</h2>
-
-
-        <p class="p-4">Bem-vindo à nossa jornada gastronômica única, onde a excelência culinária encontra a arte da hospitalidade refinada. Aqui no KHALIFA, não se trata apenas de servir refeições excepcionais, mas de proporcionar uma experiência sensorial que transcende o comum.
-
-
-            Nossa história começa com uma paixão pela culinária que se manifesta em cada prato meticulosamente elaborado. Cada ingrediente é escolhido a dedo, cada técnica é dominada com maestria, e cada detalhe é cuidadosamente considerado para criar uma sinfonia de sabores que encantará até os paladares mais exigentes.
-            
-            Mas nossa dedicação vai além da cozinha. Estamos comprometidos em criar um ambiente acolhedor e sofisticado, onde cada visita se transforma em uma celebração memorável. Nossa equipe calorosa e experiente está aqui para guiá-lo através de uma jornada gastronômica única, enquanto você explora os segredos e as nuances de nossa culinária excepcional.
-            
-            Venha descobrir o que nos torna o destino culinário preferido de tantos em todo o mundo. No KHALIFA, cada refeição é uma experiência verdadeiramente extraordinária."</p>
-    
-        
-            
-        
-    </section>
-
-
-
-
-    <section class="container-fluid bg-success text-center p-2 ">
-        <fieldset> 
-            <legend>Taxas e Serviços</legend>
-            <table  class="table table-success table-striped table-hover table-bordered border-success">
-                <caption>Descrição dos serviços e respectivos valores:</caption>
-                <thead class="table-secondary">
-                    <tr>
-                        <th>Serviços:</th>
-                        <th>Valor:</th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td>Reserva</td>
-                        <td>R$180,99</td>
-                    </tr>
-                    <tr>
-                        <td>Estacionamento</td>
-                        <td>R$150,90</td>
-                    </tr>
-                    <tr>
-                        <td>Gorjeta</td>
-                        <td>R$89,80</td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-        </fieldset>
- </section> 
-
- <p class="text text-center display-5 "id="nossa"><strong>Nossa Galeria </strong></p>
-<div class="row" id="gallery">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Wintry Mountain Landscape"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Mountains in the Clouds"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Waves at Sea"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Yosemite National Park"
-      />
-    </div>
-  </div><br><br>
-  <!-- Gallery -->
-
-
- <footer class="container-fluid">
-    <div class="row">
-      <!-- Column 1: Address -->
-      <div class="col-md-4">
-        <h2>Endereço</h2>
-        <p>
-          84600, Míconos<br>
-          Grécia<br>
-          <a href="https://www.google.com/maps" target="_blank">Google Mapas</a><br>
-          O estacionamento com manobrista está disponível para todos com estacionamento grastis e próprio disponível no local.
-        </p>
-      </div>
-  
-      <!-- Column 2: Contact -->
-      <div class="col-md-4">
-        <h2>Contato</h2>
-        <p>
-          Email: <a href="mailto:infomykonos@zumarestaurant.gr">infomykonos@zumarestaurant.gr</a><br>
-          Phone: +30 2289 020300
-        </p>
-      </div>
-  
-      <!-- Column 3: Operating Hours -->
-      <div class="col-md-4">
-        <h2>Horário de Funcionamento</h2>
-        <h3>Restaurante</h3>
-        <p>
-          Jantar de segunda a Domingo<br>
-          18h - 23h30<br><br>
-          Almoço de segunda a Domingo<br>
-          12:00h – 16h<br> <br>
-          Feriados apenas Almoço.
-        </p>
-  
-        <h3>Piscina</h3>
-        <p>
-          9 de junho em diante<br>
-          de segunda a Domingo<br>
-          11h – 17h30
-        </p>
-  
-        <h3>Experiência do Pôr do Sol</h3>
-        <p>
-          9 de junho em diante<br>
-          de segunda a Domingo<br>
-          19h-19h30
-        </p>
-      </div>
-    </div>
-  </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    
-</script>
-
-
-
-</body>
+      </div><!-- /.container -->
